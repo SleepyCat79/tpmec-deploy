@@ -1,0 +1,167 @@
+.regiester_as_seller_page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  row-gap: 40px;
+}
+.header_register_as_seller {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  row-gap: 40px;
+  padding-top: 50px;
+}
+.body_register_as_seller {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+.content_for_register_as_seller h2 {
+  font-size: 50px;
+  margin: 0px;
+}
+.content_for_register_as_seller h1 {
+  font-size: 70px;
+  margin: 0px;
+  color: #237943;
+}
+.content_for_register_as_seller p {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: bold;
+}
+.btn_container_for_register_as_seller {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  column-gap: 20px;
+}
+.btn_container_for_register_as_seller button:first-child {
+  background-color: #fff;
+  color: #237943;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.btn_container_for_register_as_seller button:first-child:hover {
+  text-decoration: underline;
+  font-size: 22px;
+}
+.btn_container_for_register_as_seller button:last-child {
+  background-color: #31572c;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  width: 150px;
+  height: 50px;
+  border-radius: 2px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn_container_for_register_as_seller button:last-child:hover {
+  animation: slide 0.5s linear infinite;
+}
+.Register_as_seller_body {
+  width: fit-content;
+}
+.header_register_as_seller {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.register_as_seller_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  row-gap: 10px;
+}
+.register_as_seller_form input {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #31572c;
+  border-radius: 2px;
+  padding: 3px;
+}
+.register_as_seller_form_privacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Register_as_seller_body .btn_create_shop {
+  width: 200px;
+  height: 50px;
+  background-color: #31572c;
+  border: none;
+  font-style: 600;
+  font-size: 20px;
+  color: #fff;
+}
+.Register_as_seller_body .btn_create_shop:hover {
+  background-color: #237943;
+  animation: slide 1s linear infinite;
+  cursor: pointer;
+}
+
+.btn_delete_image {
+  background-color: none;
+  cursor: pointer;
+}
+
+.choose_shop_image_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_array_choose_seller_image {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_container_choose_seller_image {
+  height: 30vh;
+  width: 30vw;
+  position: relative;
+}
+.input_address_seller input {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #31572c;
+  border-radius: 2px;
+  padding: 3px;
+}

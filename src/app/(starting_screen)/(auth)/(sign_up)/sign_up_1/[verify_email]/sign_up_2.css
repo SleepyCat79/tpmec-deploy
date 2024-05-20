@@ -1,0 +1,61 @@
+.container_sign_up_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 60px;
+}
+.form_sign_up_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  column-gap: 20px;
+}
+.form_sign_up_2 input {
+  width: 80%;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+}
+.form_sign_up_2 button {
+  width: 20%;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: ease-out 0.2s;
+}
+.form_sign_up_2 button:hover {
+  background-color: #f0f0f0;
+}
+.btn_resend_verify_email {
+  background-color: #fff;
+  margin-top: 10px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  transition: ease-in-out 0.1s;
+  cursor: pointer;
+}
+.btn_resend_verify_email:hover {
+  border-bottom-width: 1px;
+}
+.error_message_verify_code {
+  color: #ff0000;
+  font-size: 12px;
+}

@@ -1,0 +1,47 @@
+.tag_of_dasboard_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 5px 0px #00000040;
+}
+.tag_of_dasboard_container p {
+  margin: 0px;
+}
+.tag_of_dasboard_container div:first-child p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tag_dashboard_value {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.tag_dashboard_value div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tag_dashboard_value div:first-child {
+  justify-content: flex-start;
+  column-gap: 10px;
+  font-weight: 600;
+}
+.tag_dashboard_time {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.tag_dashboard_time p {
+  font-size: 12px;
+  color: #8c8c8c;
+}

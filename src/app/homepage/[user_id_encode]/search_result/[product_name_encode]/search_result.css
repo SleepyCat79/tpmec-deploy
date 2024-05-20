@@ -1,0 +1,10 @@
+.search_result_container {
+  margin-top: 60px;
+  padding: 30px;
+  position: relative;
+}
+.search_result_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

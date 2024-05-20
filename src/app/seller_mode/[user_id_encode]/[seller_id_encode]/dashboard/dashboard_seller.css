@@ -1,0 +1,131 @@
+.dashboard_seller {
+  padding-top: 10px;
+  padding-left: 200px;
+  background-color: #e7e7e3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+.dashboard_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+.dashboard_header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard_header p {
+  font-weight: 600;
+  margin: 0px;
+}
+.dashboard_header p:first-child {
+  font-size: 1.5em;
+}
+.dasboard_tag_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.middle_section_dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.content {
+  width: 600px;
+}
+.line_graph_container_seller {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.header_graph_container_seller {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.header_graph_container_seller div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+.header_graph_container_seller .btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.header_graph_container_seller .btn_active {
+  background-color: #3a5a40;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.header_graph_container_seller .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.best_seller_container_dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 380px;
+  border-radius: 8px;
+  background-color: #fff;
+  row-gap: 10px;
+}
+.best_seller_container_dashboard .best_seller_dashboard_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid #e7e7e3;
+}
+.best_seller_container_dashboard .best_seller_dashboard_header h3 {
+  margin-bottom: 5px;
+}
+.best_seller_container_dashboard .best_seller_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 10px;
+  width: 90%;
+  height: 350px;
+  overflow-y: scroll;
+}
+.best_seller_container_dashboard .best_seller_content::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari and Opera */
+}

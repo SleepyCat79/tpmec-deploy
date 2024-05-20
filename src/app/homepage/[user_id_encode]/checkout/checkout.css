@@ -1,0 +1,202 @@
+.checkout_page_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  row-gap: 20px;
+}
+
+.address_checkout_page {
+  width: 80%;
+  height: max-content;
+  background-color: #fff;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+.header_address_checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  column-gap: 5px;
+}
+.information_address_checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.information_address_checkout button {
+  background-color: transparent;
+  border: none;
+  color: #3a86ff;
+  cursor: pointer;
+  font-size: 16px;
+}
+.header_address_checkout p {
+  font-size: 20px;
+}
+.information_address_checkout p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.information_address_checkout p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+.field_bar_checkout {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: #fff;
+}
+.field_bar_checkout div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.field_bar_checkout div:first-child {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.field_bar_checkout div:last-child {
+  margin-right: 20px;
+  justify-content: space-around;
+  color: #adb5bd;
+}
+.shop_checkout {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+.shop_checkout_header {
+  width: 90%;
+}
+.product_checkout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+.product_checkout_left_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  margin-left: 20px;
+  column-gap: 10px;
+}
+.product_checkout_right_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-right: 20px;
+}
+.product_checkout_right_section div {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout_shop_name {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.product_information_checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+.product_information_checkout p:last-child {
+  color: #8b8c89;
+  font-size: 14px;
+}
+.product_checkout_right_section div:last-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+.checkout_information_shipping {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.checkout_information_shipping div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkout_information_shipping div:first-child {
+  column-gap: 20px;
+  border-right: 1px dashed #01161e;
+}
+.checkout_information_shipping div:last-child {
+  justify-content: space-around;
+  column-gap: 20px;
+}
+.checkout_information_shipping div:last-child p:last-child {
+  font-weight: bold;
+  font-size: 16px;
+}
+.checkout_final_step {
+  width: 80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkout_final_step div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+  margin-bottom: 20px;
+  align-items: center;
+  column-gap: 10px;
+}
+.checkout_final_step div:first-child p:last-child {
+  font-size: 40px;
+  color: #ff8600;
+}
+.checkout_final_step button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  background-color: #679436;
+  color: #fff;
+  font-size: x-large;
+  cursor: pointer;
+}
+.checkout_final_step .back-button {
+  width: 200px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  margin-top: 10px;
+  background-color: #455a64; /* Darker color */
+}

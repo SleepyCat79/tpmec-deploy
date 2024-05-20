@@ -1,0 +1,25 @@
+.product_detail_page {
+  width: 100%;
+  height: max-content;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.product_detail_content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.left_section_product_detail {
+  width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.right_section_product_detail {
+  width: 55%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,78 @@
+.waiting_confirm_container {
+  padding-top: 100px;
+  padding-left: 200px;
+  background-color: #e7e7e3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.waiting_conform_order {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  left: 200px;
+  top: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.waiting_conform_order h3 {
+  margin-bottom: 20px;
+}
+
+.waiting_conform_order table {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+.waiting_conform_order table th {
+  background-color: #f9fafb;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.waiting_conform_order table tr {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.waiting_conform_order table tr td {
+  color: #6b7280;
+  padding: 10px;
+}
+.waiting_conform_order table tr {
+  height: 40px;
+}
+.waiting_conform_order table tr td:last-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+}
+.waiting_conform_order table tr td:last-child button {
+  border: none;
+  width: 100px;
+  height: 35px;
+  border-radius: 8px;
+}
+.waiting_conform_order table tr td:last-child button:first-child {
+  background-color: #588157;
+  color: #fff;
+}
+.waiting_conform_order table tr td:last-child button:last-child {
+  background-color: #c1121f;
+  color: #fff;
+}
+.waiting_conform_order table tr td:last-child button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #000;
+}

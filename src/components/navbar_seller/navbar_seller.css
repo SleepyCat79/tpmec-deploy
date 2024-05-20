@@ -1,0 +1,54 @@
+.Navbar_user_left_container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 175px;
+  background-color: #fff;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.Navbar_user_left_btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 18px;
+}
+.Navbar_user_left_btn_container img {
+  padding-bottom: 2px;
+}
+.Navbar_user_left_btn_container button {
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+}
+.Navbar_user_left_btn_container button:hover {
+  cursor: pointer;
+  animation: updown 0.5s ease-in;
+}
+.Navbar_user_active_button {
+  background-color: #6a994e;
+  color: #fff;
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

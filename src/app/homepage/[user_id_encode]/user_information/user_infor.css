@@ -1,0 +1,81 @@
+.user_information_container_page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  row-gap: 10px;
+  margin-bottom: 50px;
+}
+.user_infor_page_information_container {
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  padding-top: 20px;
+}
+.user_infor_page_information {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #dad7cd;
+}
+.user_infor_page_label {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #8d99ae;
+}
+.user_infor_page_value {
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.user_infor_page_value {
+  flex-direction: column;
+  row-gap: 10px;
+  max-height: 100px;
+  overflow: scroll;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.user_infor_each_value {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_infor_each_value button {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  position: relative;
+  padding: 2px;
+  border: 1px solid #dad7cd;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.add_address_user_info {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #dad7cd;
+  cursor: pointer;
+  color: #3a86ff;
+}

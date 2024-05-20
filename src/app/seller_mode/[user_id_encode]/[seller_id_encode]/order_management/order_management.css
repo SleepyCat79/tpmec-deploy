@@ -1,0 +1,82 @@
+.order_management_seller_container {
+  padding-top: 100px;
+  padding-left: 200px;
+  background-color: #e7e7e3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.order_management_seller {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  left: 200px;
+  top: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.order_management_seller_filter_container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 40px;
+  align-items: center;
+}
+.order_management_seller_filter_container div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+.order_management_seller_filter_container label {
+  color: #6b7280;
+}
+.order_management_seller_filter_container input,
+select {
+  border: 1px solid #6b7280;
+  border-radius: 2px;
+  padding: 5px;
+  height: 30px;
+}
+.order_management_seller_filter_container button {
+  background-color: #f3f4f6;
+  border: 1px solid #6b7280;
+  border-radius: 2px;
+  padding: 5px;
+  height: 30px;
+}
+.order_management_seller_filter_container button:hover {
+  cursor: pointer;
+  background-color: #e5e7eb;
+}
+.table_order_seller {
+  width: 95%;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.table_order_seller table {
+  width: 100%;
+}
+.table_order_seller table th {
+  background-color: #f9fafb;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+}
+.table_order_seller table tr {
+  height: 40px;
+}
+.table_order_seller table tr td {
+  color: #6b7280;
+  padding: 10px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,119 @@
+.register_information_container{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_register_information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+.form_register_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form_register_content input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
+.first_block_form_content{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    column-gap: 20%;
+}
+.left_of_first{
+    width: 40%;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.right_of_first{
+    width: 40%;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.left_of_first div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.right_of_first div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.seconde_block_form_content{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+}
+.left_of_second{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+   
+}
+.option_for_gender{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.option_for_gender div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+.left_of_second p{
+    font-weight: bold;
+}
+.third_block_form_content{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+}
+.form_register_btn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.form_register_btn button{
+    height:40px;
+    width: 130px;
+    cursor: pointer;
+}
+.btn_clear{
+    background-color: #fff;
+    border-color:#31572C;
+    color:#31572C
+}
+.btn_finish{
+    background-color: #31572C;
+    border-width: 0px;
+    color:#fff
+}
