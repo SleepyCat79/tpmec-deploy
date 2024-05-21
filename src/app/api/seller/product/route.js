@@ -27,6 +27,7 @@ export async function POST(req) {
             console.log(err);
             reject(NextResponse.error(err));
           } else {
+            console.log(result);
             const productID = result[0].Product_ID;
 
             productOptionList.forEach((option, index) => {

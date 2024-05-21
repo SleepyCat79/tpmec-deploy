@@ -1,6 +1,6 @@
 "use client";
 import "./sign_up.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
   CognitoUserPool,
@@ -27,6 +27,28 @@ export default function SignUp() {
   const handleBlur = () => {
     setIsFocused(false);
   };
+  let cognitoUser = userPool.getCurrentUser();
+  useEffect(() => {
+    if (cognitoUser != null) {
+      cognitoUser.getSession(function (err, session) {
+        if (err) {
+          alert(err);
+          return;
+        }
+        cognitoUser.getUserAttributes(function (err, attributes) {
+          if (err) {
+            // Handle error
+          } else {
+            // Do something with attributes
+            const sub = attributes.find(
+              (attribute) => attribute.Name === "sub"
+            ).Value;
+            router.push(`/homepage/${encodeURIComponent(sub)}`);
+          }
+        });
+      });
+    }
+  }, []);
   async function check_submit(e) {
     e.preventDefault();
     if (email === "") {

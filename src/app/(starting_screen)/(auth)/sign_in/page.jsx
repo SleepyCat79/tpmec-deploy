@@ -8,15 +8,41 @@ import {
   AuthenticationDetails,
   CognitoUserPool,
 } from "amazon-cognito-identity-js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-
+const poolData = {
+  UserPoolId: process.env.NEXT_PUBLIC_AWS_Userpool_ID, // Your User Pool ID
+  ClientId: process.env.NEXT_PUBLIC_COGNITO_CLIENT_ID, // Your Client ID
+};
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState("");
   const router = useRouter();
+  const userPool = new CognitoUserPool(poolData);
+  let cognitoUser = userPool.getCurrentUser();
+  useEffect(() => {
+    if (cognitoUser != null) {
+      cognitoUser.getSession(function (err, session) {
+        if (err) {
+          alert(err);
+          return;
+        }
+        cognitoUser.getUserAttributes(function (err, attributes) {
+          if (err) {
+            // Handle error
+          } else {
+            // Do something with attributes
+            const sub = attributes.find(
+              (attribute) => attribute.Name === "sub"
+            ).Value;
+            router.push(`/homepage/${encodeURIComponent(sub)}`);
+          }
+        });
+      });
+    }
+  }, []);
 
   Amplify.configure({
     Auth: {

@@ -12,7 +12,24 @@ export default function Product_detail_description({ user_id, product_id }) {
   const [isLoading, setIsLoading] = useState(true); // Add this line
   const [option, setOption] = useState([]);
   const [seller, setSeller] = useState({});
-
+  const comments = [
+    {
+      date: "2022-01-01",
+      content:
+        "届きました♪小ぶりですけど、皮は薄くて食べやすくとても甘い美味しいみかんでした。ありがとうございました。ご馳走様でした😋",
+      image: "https://tpms3.s3.ap-southeast-2.amazonaws.com/f_avif+(3).avif",
+      name: "User 1",
+      avatar: "https://tpms3.s3.ap-southeast-2.amazonaws.com/9.jpg",
+    },
+    {
+      date: "2022-01-02",
+      content: "This is another comment",
+      image: "https://tpms3.s3.ap-southeast-2.amazonaws.com/f_avif+(3).avif",
+      name: "User 2",
+      avatar: "https://tpms3.s3.ap-southeast-2.amazonaws.com/9.jpg",
+    },
+    // Add more comments as needed
+  ];
   useEffect(() => {
     fetch(`/api/user/product?product_id=${product_id}`)
       .then((response) => response.json())
@@ -156,6 +173,40 @@ export default function Product_detail_description({ user_id, product_id }) {
         <div>
           <p>{product.Product_description}</p>
         </div>
+      </div>
+      <div className="comments_container">
+        <h2>みんなの投稿</h2>
+        <h4>2505件</h4>
+        {comments.map((comment, index) => (
+          <div className="comments" key={index}>
+            <div className="comment_content">
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <Image
+                  style={{ borderRadius: "50%" }}
+                  src={comment.avatar}
+                  height={50}
+                  width={50}
+                  alt="avatar"
+                />
+                <div className="comment_user">
+                  <p>{comment.name}</p>
+                  <p>{comment.date}</p>
+                </div>
+              </div>
+              <p>{comment.content}</p>
+              {comment.image && (
+                <div className="comment_img">
+                  <Image
+                    src={comment.image}
+                    height={150}
+                    width={150}
+                    alt="comment"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

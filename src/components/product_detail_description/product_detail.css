@@ -153,3 +153,59 @@
   padding: 10px;
   cursor: pointer;
 }
+.comments_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.comments_container h4 {
+  opacity: 0.5;
+  margin-left: 40px;
+  position: relative;
+  top: -40px;
+}
+.comments {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.comment_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start;
+  width: 80%;
+  margin-right: 15px; /* Space between text and image */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.comment_avatar {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.comment_img {
+  flex-shrink: 0;
+}
+.comment_user {
+  margin-left: 10px;
+}
+.comment_user p:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+.comment_user p:last-child {
+  font-size: 12px;
+  color: #6c757d;
+}
